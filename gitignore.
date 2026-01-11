@@ -1,0 +1,51 @@
+# =====================
+# Data & Generated Outputs
+# =====================
+data/
+videos/
+outputs/
+intermediate/
+results/
+
+# =====================
+# Allow example output only
+# =====================
+!examples/
+!examples/*.pdf
+
+# =====================
+# Media files
+# =====================
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# =====================
+# Generated documents
+# =====================
+*.pdf
+
+# =====================
+# Debug & temp files
+# =====================
+debug/
+logs/
+tmp/
+*.log
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+
+# =====================
+# OS-specific
+# =====================
+.DS_Store
+Thumbs.db
