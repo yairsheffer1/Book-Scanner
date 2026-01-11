@@ -77,6 +77,9 @@ Make sure the following tools are installed:
 Example:
 ```bash
 sudo apt install tesseract-ocr
+
+---
+
 ## 🧪 Testing
 
 This project focuses on end-to-end functional validation rather than unit-level testing.
