@@ -1,8 +1,8 @@
 # 💡 Book Scanner  
 Automated Video-Based Book Digitization
 
-<!-- Optional: add a project cover image -->
-<!-- ![Project Cover](media/cover.png) -->
+![Pipeline Overview](projectLogo.png)
+
 
 ---
 
