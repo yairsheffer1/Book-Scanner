@@ -21,15 +21,13 @@ Automated Video-Based Book Digitization
 
 ## 👥 The Team
 
-**Team Member**  
+**Project Author**  
 - Yair Sheffer  
-- ID: 318509437  
-- Email: yair.sheffer@mail.huji.ac.il  
+- GitHub: https://github.com/yairsheffer1  
 
 **Advisor & Mentor**  
 - Gal Katzhendler  
-- The Hebrew University of Jerusalem  
-
+- The Hebrew University of Jerusalem
 ---
 
 ## 📚 Project Description
