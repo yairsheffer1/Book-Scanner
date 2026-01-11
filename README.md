@@ -39,7 +39,6 @@ Instead of relying on specialized scanning hardware, the system processes a cont
 ### Main Features
 - Fully automated end-to-end pipeline
 - No dedicated scanning hardware required
-- Robust handling of page curvature, background clutter, and uneven illumination
 - Produces OCR-enabled searchable PDFs
 - Modular design enabling independent testing and extension
 
@@ -74,10 +73,6 @@ Make sure the following tools are installed:
 - pip (Python package manager)
 - Tesseract OCR
 
-Example:
-```bash
-sudo apt install tesseract-ocr
-```
 
 ---
 
