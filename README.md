@@ -77,6 +77,7 @@ Make sure the following tools are installed:
 Example:
 ```bash
 sudo apt install tesseract-ocr
+```
 
 ---
 
