@@ -77,3 +77,54 @@ Make sure the following tools are installed:
 Example:
 ```bash
 sudo apt install tesseract-ocr
+## 🧪 Testing
+
+This project focuses on end-to-end functional validation rather than unit-level testing.
+
+Testing the system involves:
+- Providing a short video of a book being flipped
+- Running the full processing pipeline
+- Verifying that a clean, ordered, and searchable PDF is produced
+
+### Sample Tests
+- **Frame Stability Test**: Verifies that selected frames correspond to stable, non-moving pages.
+- **Page Splitting Test**: Ensures correct left/right page separation.
+- **Dewarping Test**: Confirms that curved pages are rectified without damaging text content.
+- **OCR Validation**: Compares extracted text against reference digital scans for accuracy.
+
+These tests collectively ensure that each stage of the pipeline performs reliably under intended capture conditions.
+
+---
+
+## 🚀 Deployment
+
+The system is designed for offline, local execution and does not require server-side deployment.
+
+Typical deployment workflow:
+1. Capture a video of page flipping using a standard smartphone.
+2. Transfer the video to a local machine.
+3. Run the pipeline to generate a searchable PDF.
+
+The pipeline operates fully automatically after video capture and requires no further user interaction.
+
+---
+
+## ⚙️ Built With
+
+This project builds upon and integrates the following technologies and tools:
+
+- **Python** – Core implementation language
+- **OpenCV** – Image and video processing
+- **Tesseract OCR** – Optical character recognition
+- **Zucker Page Dewarping** – Geometric page rectification
+- **NumPy & Matplotlib** – Numerical processing and visualization
+
+---
+
+## 🙏 Acknowledgments
+
+- M. Zucker for the open-source page dewarping implementation
+- The Tesseract OCR project and contributors
+- Course staff and advisor for guidance and feedback
+- Open-source community for providing essential tools and inspiration
+
