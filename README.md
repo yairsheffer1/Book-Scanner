@@ -1,7 +1,8 @@
 # 💡 Book Scanner  
 Automated Video-Based Book Digitization
 
-![Pipeline Overview](projectLogo.png)
+![Project projectLogo](media/projectLogo.png)
+
 
 
 ---
