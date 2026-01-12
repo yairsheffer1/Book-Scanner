@@ -97,7 +97,7 @@ The validation workflow includes:
 
 Pipeline Stage Validation:
 
-**Frame Selection:**
+**Frame Selecting:**
 Verifies that only stable, non-moving frames are selected as candidate pages.
 
 **Page Splitting:**
