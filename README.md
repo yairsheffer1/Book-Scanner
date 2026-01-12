@@ -3,32 +3,30 @@ Automated Video-Based Book Digitization
 
 ![Project projectLogo](media/projectLogo.png)
 
-
-
 ---
 
 ## Table of Contents
-- [The Team](#-the-team)
-- [Project Description](#-project-description)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#-prerequisites)
-  - [Installing](#-installing)
-- [Testing](#-testing)
-- [Deployment](#-deployment)
-- [Built With](#-built-with)
-- [Acknowledgments](#-acknowledgments)
+- [The Team](#the-team)
+- [Project Description](#project-description)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installing](#installing)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Built With](#built-with)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
 ## 👥 The Team
 
 **Project Author**  
-- Yair Sheffer  
-- GitHub: https://github.com/yairsheffer1  
+- [Member 1](https://github.com/yairsheffer1)
 
 **Advisor & Mentor**  
 - Gal Katzhendler  
 - The Hebrew University of Jerusalem
+  
 ---
 
 ## 📚 Project Description
@@ -73,7 +71,6 @@ Make sure the following tools are installed:
 - Python 3.8 or higher
 - pip (Python package manager)
 - Tesseract OCR
-
 
 ---
 
@@ -124,14 +121,22 @@ realistic capture conditions.
 
 ## 🚀 Deployment
 
-The system is designed for offline, local execution and does not require server-side deployment.
+The system is designed for offline, local execution and runs directly on a user’s
+machine within the configured development environment.
+
+Deployment consists of running the processing pipeline as a Python-based application,
+where the input video path and the expected number of pages are provided as runtime
+parameters.
 
 Typical deployment workflow:
-1. Capture a video of page flipping using a standard smartphone.
-2. Transfer the video to a local machine.
-3. Run the pipeline to generate a searchable PDF.
 
-The pipeline operates fully automatically after video capture and requires no further user interaction.
+• Capture a short video of page flipping using a standard smartphone
+• Transfer the video file to a local machine
+• Configure the input parameters (video path and expected page count)
+• Execute the full processing pipeline to generate a clean, ordered, and searchable PDF
+
+Once executed, the pipeline runs fully automatically and requires no further user
+interaction beyond the initial parameter configuration.
 
 ---
 
