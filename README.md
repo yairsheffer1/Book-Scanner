@@ -74,6 +74,16 @@ Make sure the following tools are installed:
 
 ---
 
+## 🏗️ Installing
+
+Install the required Python dependencies using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## 🧪 Testing
 
 This project emphasizes pipeline-level functional validation with explicit inspection
