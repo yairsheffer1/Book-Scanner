@@ -79,20 +79,43 @@ Make sure the following tools are installed:
 
 ## 🧪 Testing
 
-This project focuses on end-to-end functional validation rather than unit-level testing.
+This project emphasizes pipeline-level functional validation with explicit inspection
+of intermediate outputs, rather than relying solely on black-box end-to-end testing.
 
-Testing the system involves:
-- Providing a short video of a book being flipped
-- Running the full processing pipeline
-- Verifying that a clean, ordered, and searchable PDF is produced
+The system is evaluated by running real capture data through the full processing
+pipeline, while persisting debug artifacts for each processing stage. Each stage
+produces a dedicated output directory, allowing independent verification of correctness
+before progressing to the next step.
 
-### Sample Tests
-- **Frame Stability Test**: Verifies that selected frames correspond to stable, non-moving pages.
-- **Page Splitting Test**: Ensures correct left/right page separation.
-- **Dewarping Test**: Confirms that curved pages are rectified without damaging text content.
-- **OCR Validation**: Compares extracted text against reference digital scans for accuracy.
+The validation workflow includes:
 
-These tests collectively ensure that each stage of the pipeline performs reliably under intended capture conditions.
+• Supplying a short video of a book being flipped
+• Executing the full processing pipeline
+• Persisting intermediate results for every major stage
+• Validating each stage independently using its debug outputs
+• Verifying that the final result is a clean, ordered, and searchable PDF
+
+Pipeline Stage Validation:
+
+Frame Selection / Motion Detection:
+Verifies that only stable, non-moving frames are selected as candidate pages.
+
+Page Splitting:
+Validates correct separation of left and right pages, using saved split images.
+
+Dewarping:
+Ensures curved pages are geometrically rectified without introducing text distortion,
+by inspecting both original and cleaned dewarped outputs.
+
+Grouping and Ordering:
+Confirms that pages are grouped and ordered correctly prior to PDF generation.
+
+OCR Validation:
+Evaluates extracted text accuracy by comparing OCR output against reference digital scans.
+
+This structured, stage-by-stage validation approach enables precise debugging,
+isolates failures to specific pipeline components, and ensures robustness under
+realistic capture conditions.
 
 ---
 
