@@ -21,7 +21,7 @@ Automated Video-Based Book Digitization
 ## 👥 The Team
 
 **Project Author**  
-- [Member 1](https://github.com/yairsheffer1)
+- [Yair Sheffer](https://github.com/yairsheffer1)
 
 **Advisor & Mentor**  
 - Gal Katzhendler  
