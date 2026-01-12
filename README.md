@@ -97,20 +97,23 @@ The validation workflow includes:
 
 Pipeline Stage Validation:
 
-Frame Selection / Motion Detection:
+**Frame Selection:**
 Verifies that only stable, non-moving frames are selected as candidate pages.
 
-Page Splitting:
+**Page Splitting:**
 Validates correct separation of left and right pages, using saved split images.
 
-Dewarping:
+**Corner-Based Cropping:**
+Verifies safe and consistent background reduction with no observed content loss.
+
+**Grouping and Ordering:**
+Confirms that pages are grouped and ordered correctly prior to PDF generation.
+
+**Dewarping:**
 Ensures curved pages are geometrically rectified without introducing text distortion,
 by inspecting both original and cleaned dewarped outputs.
 
-Grouping and Ordering:
-Confirms that pages are grouped and ordered correctly prior to PDF generation.
-
-OCR Validation:
+**OCR Validation:**
 Evaluates extracted text accuracy by comparing OCR output against reference digital scans.
 
 This structured, stage-by-stage validation approach enables precise debugging,
