@@ -229,7 +229,7 @@ def filter_group_to_most_text(groups, cropped_folder, lang='heb'):
     base_project_folder = os.path.dirname(cropped_folder)
     side_name = os.path.basename(cropped_folder).replace("Cropped_", "")
     side_name = os.path.basename(side_name).replace("_S3", "")  # לדוגמה: R_S3
-    finals_folder = os.path.join(base_project_folder, f"finals_{side_name}_S4")
+    finals_folder = os.path.join(base_project_folder, f"grouped_{side_name}_S4")
     os.makedirs(finals_folder, exist_ok=True)
 
     for i, (group_id, image_paths) in enumerate(groups.items(), 1):

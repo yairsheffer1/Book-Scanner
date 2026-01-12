@@ -9,8 +9,8 @@ import zucker_dewarp
 import fix_folder
 
 
-num_of_pages = 9
-path = r"C:\Users\user\Desktop\project\9.M4V"
+num_of_pages = 4
+path = r"C:\Users\user\Desktop\project\4.M4V"
 
 def run_full_processing(path, num_of_pages):
     matplotlib.use('TkAgg')
@@ -56,48 +56,48 @@ def run_full_processing(path, num_of_pages):
         filtered_L,
         filtered_R,
         matching_pairs)
-    arrange.apply_masks_to_folder(r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_L_S4",
+    arrange.apply_masks_to_folder(r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\grouped_L_S4",
                              r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\L")
     arrange.apply_masks_to_folder(
-        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_R_S4",
+        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\grouped_R_S4",
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\R")
 
     print("step F")
     zucker_dewarp.run1(r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\L",
-                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_L_S4")
+                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_L_S5")
     zucker_dewarp.run1(r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\R",
-                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_R_S4")
+                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_R_S5")
 
 
     zucker_dewarp.run0(r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf\L",
-                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_L_S4")
+                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_L_S5")
     zucker_dewarp.run0(r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf\R",
-                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_R_S4")
+                       r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_R_S5")
     #
     fix_folder.sync_folders_by_number(
         source_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf\L",
-        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_L_S4"
+        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_L_S5"
     )
     fix_folder.sync_folders_by_number(
         source_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf\R",
-        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_R_S4"
+        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_R_S5"
     )
     fix_folder.sync_folders_by_number(
         source_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\L",
-        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_L_S4"
+        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_L_S5"
     )
     fix_folder.sync_folders_by_number(
         source_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\R",
-        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_R_S4"
+        target_dir=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_R_S5"
     )
     arrange.create_interleaved_pdf_by_number(
-    right_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_R_S4",
-    left_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_L_S4",
+    right_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_R_S5",
+    left_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_L_S5",
     output_pdf_path=r"C:\Users\user\PycharmProjects\pythonProject10\results\Scanned_Book_V1.pdf"
     )
     arrange.create_interleaved_pdf_by_number(
-        right_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_R_S4",
-        left_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_L_S4",
+        right_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_R_S5",
+        left_folder=r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_L_S5",
         output_pdf_path=r"C:\Users\user\PycharmProjects\pythonProject10\results\Scanned_Book_V2.pdf"
     )
     print("END!!!")
@@ -107,14 +107,14 @@ def erase():
     folders = [
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Cropped_L_S3",
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Cropped_R_S3",
-        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_L_S4",
-        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_R_S4",
+        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_L_S5",
+        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_original_R_S5",
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Motion_detection_S1",
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Page_split_S2",
-        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_L_S4",
-        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals_Dewarped_R_S4",
-        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_L_S4",
-        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\finals1_Dewarped_R_S4",
+        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_R_S5",
+        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\Dewarped_clean_L_S5",
+        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\grouped_L_S4",
+        r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\grouped_R_S4",
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\L",
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf1\R",
         r"C:\Users\user\PycharmProjects\pythonProject10\testings & mid Results\filesOfPdf\L",
@@ -133,6 +133,6 @@ def erase():
 
 
 
-run_full_processing(path, num_of_pages)
-
+# run_full_processing(path, num_of_pages)
+erase()
 
